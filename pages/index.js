@@ -10,6 +10,7 @@ export default function Home() {
       </Head>
 
       <main>
+      <img src={require('./images/ben-den-engelsen-unsplash.jpg')} alt="Unnamed Road, Cline River, Canada" />
         <Image
           src="https://img3.daumcdn.net/thumb/R658x0.q70/?fname=https://t1.daumcdn.net/news/202106/20/yonhap/20210620165732502qqqn.jpg"
           alt="title"
