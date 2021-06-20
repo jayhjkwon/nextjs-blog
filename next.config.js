@@ -8,6 +8,7 @@ module.exports = {
             "s3-ap-northeast-2.amazonaws.com",
             "stashpub.com",
             "stashpub-image-dev.s3.ap-northeast-2.amazonaws.com",
+            "master.djab33txz951j.amplifyapp.com"
         ],
     },
     // this is to restore scroll position when back/forward happens
