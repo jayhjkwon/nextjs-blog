@@ -1,7 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 
-export default function Home() {
+export const getServerSideProps = () => {
+    return { props: { name: "jay" }};
+};
+
+export default function Home({ name }) {
   return (
     <div className="container">
       <Head>
@@ -10,6 +14,7 @@ export default function Home() {
       </Head>
 
       <main>
+      <h2>name: {name}</h2>
       <img src={require('./images/ben-den-engelsen-unsplash.jpg')} alt="Unnamed Road, Cline River, Canada" />
       <img src={require('./images/ben-den-engelsen-unsplash.jpg?webp')} alt="Unnamed Road, Cline River, Canada" />
         <Image
