@@ -1,0 +1,13 @@
+type Author @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  blogs: [Blog] @connection(keyName: "byAuthor", fields: ["id"])
+}
+
+type Blog @model @auth(rules: [{allow: public}]) @key(name: "byAuthor", fields: ["authorID"]) {
+  id: ID!
+  title: String
+  contents: String
+  authorID: ID
+}
+ 
