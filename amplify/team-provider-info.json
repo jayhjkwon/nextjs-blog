@@ -19,5 +19,26 @@
                 }
             }
         }
+    },
+    "custone": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-nextjsblog-custone-234122-authRole",
+            "UnauthRoleArn": "arn:aws:iam::121753667442:role/amplify-nextjsblog-custone-234122-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::121753667442:role/amplify-nextjsblog-custone-234122-authRole",
+            "Region": "ap-southeast-2",
+            "DeploymentBucketName": "amplify-nextjsblog-custone-234122-deployment",
+            "UnauthRoleName": "amplify-nextjsblog-custone-234122-unauthRole",
+            "StackName": "amplify-nextjsblog-custone-234122",
+            "StackId": "arn:aws:cloudformation:ap-southeast-2:121753667442:stack/amplify-nextjsblog-custone-234122/2e1fbd10-e4a9-11eb-ad38-02bdbefac192",
+            "AmplifyAppId": "djab33txz951j"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "djab33txz951j",
+                    "type": "cicd"
+                }
+            }
+        }
     }
 }
