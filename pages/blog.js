@@ -21,7 +21,7 @@ const Blog = () => {
 
   return (
     <>
-      <div>Blog</div>
+      <div>Blog...</div>
       <ul>
         {data &&
           data.data.listAuthors.items.map((item) => (
