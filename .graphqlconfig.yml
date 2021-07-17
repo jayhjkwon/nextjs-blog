@@ -1,6 +1,6 @@
 projects:
   nextjsblog:
-    schemaPath: amplify/backend/api/nextjsblog/build/schema.graphql
+    schemaPath: amplify/backend/api/mainbackend/build/schema.graphql
     includes:
       - src/graphql/**/*.js
     excludes:

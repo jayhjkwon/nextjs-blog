@@ -6,6 +6,10 @@ export const onCreateAuthor = /* GraphQL */ `
     onCreateAuthor {
       id
       name
+      gender
+      _version
+      _deleted
+      _lastChangedAt
       createdAt
       updatedAt
       blogs {
@@ -14,10 +18,14 @@ export const onCreateAuthor = /* GraphQL */ `
           title
           contents
           authorID
+          _version
+          _deleted
+          _lastChangedAt
           createdAt
           updatedAt
         }
         nextToken
+        startedAt
       }
     }
   }
@@ -27,6 +35,10 @@ export const onUpdateAuthor = /* GraphQL */ `
     onUpdateAuthor {
       id
       name
+      gender
+      _version
+      _deleted
+      _lastChangedAt
       createdAt
       updatedAt
       blogs {
@@ -35,10 +47,14 @@ export const onUpdateAuthor = /* GraphQL */ `
           title
           contents
           authorID
+          _version
+          _deleted
+          _lastChangedAt
           createdAt
           updatedAt
         }
         nextToken
+        startedAt
       }
     }
   }
@@ -48,6 +64,10 @@ export const onDeleteAuthor = /* GraphQL */ `
     onDeleteAuthor {
       id
       name
+      gender
+      _version
+      _deleted
+      _lastChangedAt
       createdAt
       updatedAt
       blogs {
@@ -56,10 +76,14 @@ export const onDeleteAuthor = /* GraphQL */ `
           title
           contents
           authorID
+          _version
+          _deleted
+          _lastChangedAt
           createdAt
           updatedAt
         }
         nextToken
+        startedAt
       }
     }
   }
@@ -71,6 +95,9 @@ export const onCreateBlog = /* GraphQL */ `
       title
       contents
       authorID
+      _version
+      _deleted
+      _lastChangedAt
       createdAt
       updatedAt
     }
@@ -83,6 +110,9 @@ export const onUpdateBlog = /* GraphQL */ `
       title
       contents
       authorID
+      _version
+      _deleted
+      _lastChangedAt
       createdAt
       updatedAt
     }
@@ -95,6 +125,9 @@ export const onDeleteBlog = /* GraphQL */ `
       title
       contents
       authorID
+      _version
+      _deleted
+      _lastChangedAt
       createdAt
       updatedAt
     }

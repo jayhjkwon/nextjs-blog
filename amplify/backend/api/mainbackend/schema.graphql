@@ -2,6 +2,7 @@ type Author @model @auth(rules: [{allow: public}]) {
   id: ID!
   name: String
   blogs: [Blog] @connection(keyName: "byAuthor", fields: ["id"])
+  gender: String
 }
 
 type Blog @model @auth(rules: [{allow: public}]) @key(name: "byAuthor", fields: ["authorID"]) {
@@ -10,3 +11,4 @@ type Blog @model @auth(rules: [{allow: public}]) @key(name: "byAuthor", fields: 
   contents: String
   authorID: ID
 }
+ 

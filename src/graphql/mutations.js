@@ -9,6 +9,10 @@ export const createAuthor = /* GraphQL */ `
     createAuthor(input: $input, condition: $condition) {
       id
       name
+      gender
+      _version
+      _deleted
+      _lastChangedAt
       createdAt
       updatedAt
       blogs {
@@ -17,10 +21,14 @@ export const createAuthor = /* GraphQL */ `
           title
           contents
           authorID
+          _version
+          _deleted
+          _lastChangedAt
           createdAt
           updatedAt
         }
         nextToken
+        startedAt
       }
     }
   }
@@ -33,6 +41,10 @@ export const updateAuthor = /* GraphQL */ `
     updateAuthor(input: $input, condition: $condition) {
       id
       name
+      gender
+      _version
+      _deleted
+      _lastChangedAt
       createdAt
       updatedAt
       blogs {
@@ -41,10 +53,14 @@ export const updateAuthor = /* GraphQL */ `
           title
           contents
           authorID
+          _version
+          _deleted
+          _lastChangedAt
           createdAt
           updatedAt
         }
         nextToken
+        startedAt
       }
     }
   }
@@ -57,6 +73,10 @@ export const deleteAuthor = /* GraphQL */ `
     deleteAuthor(input: $input, condition: $condition) {
       id
       name
+      gender
+      _version
+      _deleted
+      _lastChangedAt
       createdAt
       updatedAt
       blogs {
@@ -65,10 +85,14 @@ export const deleteAuthor = /* GraphQL */ `
           title
           contents
           authorID
+          _version
+          _deleted
+          _lastChangedAt
           createdAt
           updatedAt
         }
         nextToken
+        startedAt
       }
     }
   }
@@ -83,6 +107,9 @@ export const createBlog = /* GraphQL */ `
       title
       contents
       authorID
+      _version
+      _deleted
+      _lastChangedAt
       createdAt
       updatedAt
     }
@@ -98,6 +125,9 @@ export const updateBlog = /* GraphQL */ `
       title
       contents
       authorID
+      _version
+      _deleted
+      _lastChangedAt
       createdAt
       updatedAt
     }
@@ -113,6 +143,9 @@ export const deleteBlog = /* GraphQL */ `
       title
       contents
       authorID
+      _version
+      _deleted
+      _lastChangedAt
       createdAt
       updatedAt
     }

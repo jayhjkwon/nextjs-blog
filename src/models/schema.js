@@ -31,6 +31,13 @@ export const schema = {
                         "associatedWith": "authorID"
                     }
                 },
+                "gender": {
+                    "name": "gender",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
                 "createdAt": {
                     "name": "createdAt",
                     "isArray": false,
@@ -158,5 +165,5 @@ export const schema = {
     },
     "enums": {},
     "nonModels": {},
-    "version": "4532307983adc407d487120d4511c091"
+    "version": "3d8c87514a53dce0c0ab820d3cc6fc89"
 };

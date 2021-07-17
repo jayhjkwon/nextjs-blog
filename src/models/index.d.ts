@@ -16,6 +16,7 @@ export declare class Author {
   readonly id: string;
   readonly name?: string;
   readonly blogs?: (Blog | null)[];
+  readonly gender?: string;
   readonly createdAt?: string;
   readonly updatedAt?: string;
   constructor(init: ModelInit<Author, AuthorMetaData>);
