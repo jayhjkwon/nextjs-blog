@@ -18,7 +18,7 @@ const Blog = () => {
     };
     fetchData();
   }, []);
-
+  
   return (
     <>
       <div>Blog... Hello</div>
@@ -26,7 +26,7 @@ const Blog = () => {
         {data &&
           data.data.listAuthors.items.map((item) => (
             <li key={item.id}>
-              {item.name}{" "}{item.gender}
+              {item.name}{" "}{item.gender}-{item.bob}
               <ul>
                 {item.blogs.items.map((blogItem) => (
                   <li>{blogItem.title}</li>

@@ -7,6 +7,7 @@ export const getAuthor = /* GraphQL */ `
       id
       name
       gender
+      bob
       _version
       _deleted
       _lastChangedAt
@@ -41,6 +42,7 @@ export const listAuthors = /* GraphQL */ `
         id
         name
         gender
+        bob
         _version
         _deleted
         _lastChangedAt
@@ -84,6 +86,7 @@ export const syncAuthors = /* GraphQL */ `
         id
         name
         gender
+        bob
         _version
         _deleted
         _lastChangedAt

@@ -7,6 +7,7 @@ export const onCreateAuthor = /* GraphQL */ `
       id
       name
       gender
+      bob
       _version
       _deleted
       _lastChangedAt
@@ -36,6 +37,7 @@ export const onUpdateAuthor = /* GraphQL */ `
       id
       name
       gender
+      bob
       _version
       _deleted
       _lastChangedAt
@@ -65,6 +67,7 @@ export const onDeleteAuthor = /* GraphQL */ `
       id
       name
       gender
+      bob
       _version
       _deleted
       _lastChangedAt
